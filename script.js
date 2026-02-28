@@ -1,48 +1,40 @@
+// HAMBURGER MENU
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+hamburger.addEventListener('click', () => { navLinks.classList.toggle('show'); });
+
+// DARK MODE TOGGLE
+const toggle = document.getElementById('dark-mode-toggle');
+if(localStorage.getItem('theme')==='dark') document.body.classList.add('dark');
+toggle.addEventListener('click',()=>{
+  document.body.classList.toggle('dark');
+  localStorage.setItem('theme', document.body.classList.contains('dark')?'dark':'light');
+});
+
+// COUNTER ANIMASI
+const counters=document.querySelectorAll('.counter');
+counters.forEach(counter=>{
+  const updateCounter=()=>{
+    const target=+counter.getAttribute('data-target');
+    let c=+counter.innerText;
+    const increment=target/200;
+    if(c<target){
+      counter.innerText=`${Math.ceil(c+increment)}`;
+      setTimeout(updateCounter,10);
+    } else counter.innerText=target;
+  };
+  updateCounter();
+});
+
 // SCROLL REVEAL
-const fades = document.querySelectorAll(".fade");
-
-window.addEventListener("scroll", () => {
-  const trigger = window.innerHeight * 0.85;
-  fades.forEach(section => {
-    const top = section.getBoundingClientRect().top;
-    if (top < trigger) {
-      section.classList.add("show");
-    }
+const reveals = document.querySelectorAll('section');
+window.addEventListener('scroll',()=>{
+  reveals.forEach(sec=>{
+    const top = sec.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if(top < windowHeight - 50) sec.style.opacity='1';
   });
 });
-
-// HAMBURGER
-const menuToggle = document.getElementById("menu-toggle");
-const navMenu = document.getElementById("nav-menu");
-
-menuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-  menuToggle.classList.toggle("active");
-});
-
-document.querySelectorAll("#nav-menu a").forEach(link => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("active");
-    menuToggle.classList.remove("active");
-  });
-});
-
-// DARK MODE
-const darkBtn = document.getElementById("darkModeBtn");
-
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark");
-  darkBtn.textContent = "☀️";
-}
-
-darkBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-
-  if (document.body.classList.contains("dark")) {
-    localStorage.setItem("theme", "dark");
-    darkBtn.textContent = "☀️";
-  } else {
-    localStorage.setItem("theme", "light");
-    darkBtn.textContent = "🌙";
-  }
-});
+// Semua section langsung visible (safe)
+revealSections();
+function revealSections(){reveals.forEach(sec=>sec.style.opacity='1');}
