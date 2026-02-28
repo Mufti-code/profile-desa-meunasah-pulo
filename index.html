@@ -3,99 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desa Meunasah Pulo</title>
+  <title>Profil Desa Meunasah Pulo</title>
+  <meta name="description" content="Website Profil Desa Meunasah Pulo, Peudada, Bireuen, Aceh">
+  <meta name="author" content="Portfolio Frontend">
 
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="logo">Meunasah Pulo</div>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Meunasah Pulo</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#statistik">Statistik</a></li>
+        <li><a href="#fasilitas">Fasilitas</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <button id="dark-mode-toggle">🌙</button>
+    </nav>
+  </header>
 
-  <div class="menu-toggle" id="menu-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <ul id="nav-menu">
-    <li><a href="#about">Tentang</a></li>
-    <li><a href="#stats">Statistik</a></li>
-    <li><a href="#gallery">Galeri</a></li>
-    <li><a href="#map">Lokasi</a></li>
-    <li><button id="darkModeBtn">🌙</button></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<header class="hero">
-  <h1>Desa Meunasah Pulo</h1>
-  <p>Kecamatan Peudada, Kabupaten Bireuen, Aceh</p>
-</header>
-
-<!-- ABOUT -->
-<section id="about" class="section fade">
-  <h2>Tentang Desa</h2>
-  <p>
-    Desa Meunasah Pulo merupakan desa di Kecamatan Peudada, Kabupaten Bireuen, Aceh.
-    Masyarakatnya memiliki kehidupan religius yang kuat serta budaya yang terjaga.
-  </p>
-</section>
-
-<!-- STATS -->
-<section id="stats" class="section bg-light fade">
-  <h2>Statistik Penduduk</h2>
-  <div class="stats">
-    <div class="card">
-      <h3>1.386</h3>
-      <p>Total Penduduk</p>
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Desa Meunasah Pulo</h1>
+      <p>Kecamatan Peudada · Kabupaten Bireuen · Aceh</p>
+      <a href="#galeri" class="btn-primary">Lihat Galeri</a>
     </div>
-    <div class="card">
-      <h3>685</h3>
-      <p>Laki-laki</p>
+  </section>
+
+  <!-- TENTANG DESA -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Tentang Desa Meunasah Pulo</h2>
+      <p><strong>Desa Meunasah Pulo</strong> terletak di Kecamatan Peudada, Kabupaten Bireuen, Aceh. Dipimpin oleh Keuchik <strong>Hamdani</strong> dan memiliki jumlah penduduk sekitar <strong>1.386 jiwa</strong> (685 laki-laki, 701 perempuan).</p>
+
+      <h3>Geografi & Administratif</h3>
+      <ul>
+        <li>Provinsi: Aceh</li>
+        <li>Kabupaten: Bireuen</li>
+        <li>Kecamatan: Peudada</li>
+        <li>Kode Pos: 24262</li>
+        <li>Koordinat: 5.145678°N, 96.520123°E</li>
+      </ul>
+
+      <h3>Fasilitas & Infrastruktur</h3>
+      <ul>
+        <li>Mushalla Gampong Meunasah Pulo (kapasitas ±175 jamaah)</li>
+        <li>UPTD SMP Negeri 1 Peudada</li>
+        <li>MAN 6 Bireuen</li>
+        <li>TK Pesisir Anak Nelayan</li>
+        <li>MTsS Nurul Islam</li>
+        <li>Jembatan Peudada (penghubung desa dan kecamatan)</li>
+        <li>Jalan desa & akses transportasi lokal</li>
+      </ul>
+
+      <h3>Perekonomian & Potensi Lokal</h3>
+      <ul>
+        <li>Mayoritas penduduk bekerja di sektor pertanian dan perikanan</li>
+        <li>Produksi lokal: hasil laut, kopi, kerajinan tangan</li>
+        <li>Pasar tradisional untuk kebutuhan sehari-hari</li>
+      </ul>
+
+      <h3>Pendidikan & Keagamaan</h3>
+      <ul>
+        <li>Pendidikan formal mulai TK, SD, SMP, MTs dan Madrasah Aliyah</li>
+        <li>Mushalla desa sebagai pusat kegiatan ibadah & pengajian</li>
+        <li>Program kegiatan sosial & keagamaan rutin</li>
+      </ul>
     </div>
-    <div class="card">
-      <h3>701</h3>
-      <p>Perempuan</p>
+  </section>
+
+  <!-- STATISTIK -->
+  <section id="statistik" class="stats">
+    <div class="container">
+      <h2>Statistik Penduduk</h2>
+      <div class="stats-grid">
+        <div class="card">
+          <h3 class="counter" data-target="1386">0</h3>
+          <p>Total Penduduk</p>
+        </div>
+        <div class="card">
+          <h3>685</h3>
+          <p>Laki-laki</p>
+        </div>
+        <div class="card">
+          <h3>701</h3>
+          <p>Perempuan</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- GALERI -->
-<section id="gallery" class="section fade">
-  <h2>Galeri Desa</h2>
-  <div class="gallery">
-    <img src="assets/images/foto1.jpg">
-    <img src="assets/images/foto2.jpg">
-    <img src="assets/images/foto3.jpg">
-  </div>
-</section>
+  <!-- FASILITAS -->
+  <section id="fasilitas" class="facilities">
+    <div class="container">
+      <h2>Fasilitas Desa</h2>
+      <div class="facilities-grid">
+        <div class="card">
+          <h3>Mushalla Gampong Meunasah Pulo</h3>
+          <p>Kapasitas ±175 jamaah. Fungsi: Ibadah & kegiatan keagamaan masyarakat.</p>
+        </div>
+        <div class="card">
+          <h3>Pendidikan</h3>
+          <ul>
+            <li>UPTD SMP Negeri 1 Peudada</li>
+            <li>MAN 6 Bireuen</li>
+            <li>TK Pesisir Anak Nelayan</li>
+            <li>MTsS Nurul Islam</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- MAP -->
-<section id="map" class="section bg-light fade">
-  <h2>Lokasi Desa</h2>
-  <div class="map-container">
-    <iframe
-      src="https://www.google.com/maps?q=Meunasah+Pulo+Peudada&output=embed"
-      width="100%"
-      height="350"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy">
-    </iframe>
-  </div>
-</section>
+  <!-- GALERI -->
+  <section id="galeri" class="gallery">
+    <div class="container">
+      <h2>Jembatan Peudada</h2>
+      <p>Infrastruktur penghubung penting di Kecamatan Peudada.</p>
+      <div class="gallery-grid">
+        <img src="https://cdn.ajnn.net/files/images/20250519-dji-0299.jpg" alt="Jembatan Peudada 1">
+        <img src="https://static.limawaktu.id/2024/09/22/whatsapp-image-2024-09-22-at-172427-66f09e426c743.jpeg" alt="Jembatan Peudada 2">
+        <img src="https://www.rmolaceh.id/uploads/images/2025/05/image_750x_682c02a631d53.jpg" alt="Jembatan Peudada 3">
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2026 Profil Desa Meunasah Pulo</p>
-</footer>
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Kontak Desa</h2>
+      <p>Alamat: Meunasah Pulo, Peudada, Bireuen, Aceh 24262</p>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.123456!2d96.520123!3d5.145678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30403f0000000001%3A0xabcdef1234567890!2sMeunasah%20Pulo!5e0!3m2!1sid!2sid!4v1670000000000!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Website Profil Desa Meunasah Pulo | Portfolio Frontend</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
