@@ -1,26 +1,28 @@
 # Website Profil Desa Meunasah Pulo
 
-## Deskripsi
-Website profil desa Meunasah Pulo, Kecamatan Peudada, Kabupaten Bireuen, Aceh.  
-Menampilkan informasi desa, statistik penduduk, fasilitas, mushalla, galeri, dan peta.
+Website ini merupakan project **portfolio frontend** yang menampilkan profil lengkap **Desa Meunasah Pulo**, Kecamatan Peudada, Kabupaten Bireuen, Aceh.
 
-## Fitur
-- Hero section dengan foto Jembatan Peudada
-- Glass navbar + responsive hamburger menu
-- Dark mode toggle (disimpan di localStorage)
-- Statistik penduduk interaktif
-- Fasilitas desa (Mushalla & Sekolah)
-- Galeri jembatan Peudada
-- Google Maps embed lokasi desa
-- Animasi scroll reveal dan hover premium
-- Fully responsive & mobile friendly
+### Fitur Utama
+- Hero section premium dengan **overlay & CTA**  
+- Tentang Desa lengkap dengan **informasi geografis, fasilitas, pendidikan, perekonomian**  
+- Statistik penduduk dengan **counter animasi**  
+- Fasilitas desa & pendidikan  
+- Galeri foto **Jembatan Peudada**  
+- Kontak & Google Maps embed  
+- **Dark mode toggle** tersimpan di localStorage  
+- **Responsive** untuk desktop, tablet, dan HP  
+- Clean & modern **UI/UX**  
 
-## Tech Stack
-- HTML5
-- CSS3 (custom styling)
-- JavaScript Vanilla
+### Stack Teknologi
+- HTML5  
+- CSS3 (custom styling, responsive, dark mode)  
+- JavaScript vanilla (hamburger menu, counter, dark mode, scroll reveal)  
+- Google Fonts: Poppins & Inter  
 
-## Cara Deploy
-1. Clone repository ini
-2. Upload ke GitHub
-3. Aktifkan GitHub Pages dari branch `main`
+### Struktur Folder
+website-profil-desa-meunasah-pulo/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
